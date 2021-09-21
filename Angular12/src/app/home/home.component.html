@@ -1,0 +1,13 @@
+<h4>Tỉnh/Thành Phố</h4>
+<select id="city" (change) = 'onChangeData($event)'>
+    <option *ngFor = 'let data of vietnamData' value="{{data.city}}">
+        {{data.city}}
+    </option>
+</select>
+<br/>
+<h4>Quận/Huyện</h4>
+<select id="city">
+    <option *ngFor = 'let town of districts'>
+        {{town}}
+    </option>
+</select>
